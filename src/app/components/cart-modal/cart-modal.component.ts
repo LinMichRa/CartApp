@@ -18,9 +18,9 @@ export class CartModalComponent {
     this.idProductEventEmitter.emit(id);
   }
 
-  @Output() openEventEmitter = new EventEmitter();
+  @Output() closeEventEmitter = new EventEmitter();
 
   closeCart(): void{
-    this.openEventEmitter.emit();
+    this.closeEventEmitter.emit();
   }
 }
